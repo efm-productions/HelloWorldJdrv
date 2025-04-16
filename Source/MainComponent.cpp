@@ -3,6 +3,9 @@
 //==============================================================================
 MainComponent::MainComponent()
 {
+    // add a toggle button
+    addAndMakeVisible(TestToggle);
+
     setSize (600, 400);
 }
 
@@ -26,4 +29,7 @@ void MainComponent::resized()
     // This is called when the MainComponent is resized.
     // If you add any child components, this is where you should
     // update their positions.
+
+    // add a toggle button to top left corner of window at pos 10,10 with a size of 30x30
+    TestToggle.setBounds(10, 10, 30, 30);
 }
